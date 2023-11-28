@@ -2,10 +2,35 @@ import { BrewMethod } from "@/types/brewing";
 
 const brewMethods: BrewMethod[] = [
 	{
-		name: "Tetsu Kasuya Standard",
+		name: "V60 - Standard",
 		steps: [
 			{
-				description: "1st Pour",
+				description: "1st Pour (steep)",
+				suggestedRatio: 0.2,
+			},
+			{
+				description: "2nd Pour",
+				suggestedRatio: 0.2,
+			},
+			{
+				description: "3rd Pour",
+				suggestedRatio: 0.2,
+			},
+			{
+				description: "4th Pour",
+				suggestedRatio: 0.2,
+			},
+			{
+				description: "5th Pour",
+				suggestedRatio: 0.2,
+			},
+		],
+	},
+	{
+		name: "Tetsu Kasuya - Standard",
+		steps: [
+			{
+				description: "1st Pour (steep)",
 				suggestedRatio: 0.4 * 0.5,
 			},
 			{
@@ -19,10 +44,10 @@ const brewMethods: BrewMethod[] = [
 		],
 	},
 	{
-		name: "Tetsu Kasuya Brighter",
+		name: "Tetsu Kasuya - Brighter",
 		steps: [
 			{
-				description: "1st Pour",
+				description: "1st Pour (steep)",
 				suggestedRatio: 0.4 * 0.6,
 			},
 			{
@@ -36,10 +61,10 @@ const brewMethods: BrewMethod[] = [
 		],
 	},
 	{
-		name: "Tetsu Kasuya Sweeter",
+		name: "Tetsu Kasuya - Sweeter",
 		steps: [
 			{
-				description: "1st Pour",
+				description: "1st Pour (steep)",
 				suggestedRatio: 0.4 * 0.4,
 			},
 			{
