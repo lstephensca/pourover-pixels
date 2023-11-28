@@ -6,15 +6,15 @@ const brewMethods: BrewMethod[] = [
 		steps: [
 			{
 				description: "1st Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.4 * 0.5,
+				suggestedRatio: 0.4 * 0.5,
 			},
 			{
 				description: "2nd Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.4 * 0.5,
+				suggestedRatio: 0.4 * 0.5,
 			},
 			{
 				description: "3rd Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.6,
+				suggestedRatio: 0.6,
 			},
 		],
 	},
@@ -23,15 +23,15 @@ const brewMethods: BrewMethod[] = [
 		steps: [
 			{
 				description: "1st Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.4 * 0.6,
+				suggestedRatio: 0.4 * 0.6,
 			},
 			{
 				description: "2nd Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.4 * 0.4,
+				suggestedRatio: 0.4 * 0.4,
 			},
 			{
 				description: "3rd Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.6,
+				suggestedRatio: 0.6,
 			},
 		],
 	},
@@ -40,15 +40,15 @@ const brewMethods: BrewMethod[] = [
 		steps: [
 			{
 				description: "1st Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.4 * 0.4,
+				suggestedRatio: 0.4 * 0.4,
 			},
 			{
 				description: "2nd Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.4 * 0.6,
+				suggestedRatio: 0.4 * 0.6,
 			},
 			{
 				description: "3rd Pour",
-				amount: (baseRatio, coffeeGrams, totalWater) => totalWater * 0.6,
+				suggestedRatio: 0.6,
 			},
 		],
 	},

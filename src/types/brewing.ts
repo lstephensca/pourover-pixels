@@ -1,6 +1,6 @@
 export type BrewStep = {
 	description: string;
-	amount: (baseRatio: number, coffeeGrams: number, totalWater: number) => number;
+	suggestedRatio: number;
 };
 
 export type BrewMethod = {
@@ -11,5 +11,5 @@ export type BrewMethod = {
 export interface Pour {
 	description: string;
 	amount: number;
-	time: number;
+	time: string;
 }
