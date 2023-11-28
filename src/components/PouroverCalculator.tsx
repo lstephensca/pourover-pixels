@@ -66,14 +66,14 @@ const CalculatePourover = ({}: CalculatePouroverProps) => {
 
 					<div className="flex">
 						<input
-							className="rounded-bl-lg rounded-tl-lg border-b-2 border-l-2 border-r-0 border-t-2 border-violet-400 disabled:bg-slate-200"
+							className="w-full flex-1 rounded-bl-lg rounded-tl-lg border-b-2 border-l-2 border-r-0 border-t-2 border-violet-400 disabled:bg-slate-200"
 							type="number"
 							value={1}
 							placeholder="Brew ratio"
 							disabled
 						/>
 						<input
-							className="rounded-br-lg rounded-tr-lg border-b-2 border-l-0 border-r-2 border-t-2 border-violet-400"
+							className="w-full flex-1 rounded-br-lg rounded-tr-lg border-b-2 border-l-0 border-r-2 border-t-2 border-violet-400"
 							type="number"
 							value={coffeeWaterRatio}
 							onChange={(e) => setCoffeeWaterRatio(Number(e.target.value))}
