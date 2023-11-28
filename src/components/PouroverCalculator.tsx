@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Pour } from "@/types/brewing";
 import brewMethods from "@/methods/brewMethods";
+import PouroverSteps from "@/components/PouroverSteps";
 
 interface CalculatePouroverProps {}
 
@@ -87,19 +88,7 @@ const CalculatePourover = ({}: CalculatePouroverProps) => {
 					</div>
 				</button>
 			</div>
-
-			{pours.length > 0 && (
-				<div className="rounded-lg border-2 border-black bg-teal-300 p-8">
-					<h2 className="mb-4 text-3xl font-bold">Steps to a so-so brew...</h2>
-					<ul className="flex flex-col gap-2 text-xl ">
-						{pours.map((pour, index) => (
-							<li key={index}>
-								<span className="font-bold">{pour.description}</span>: {pour.amount}g at {pour.time} seconds
-							</li>
-						))}
-					</ul>
-				</div>
-			)}
+			{pours.length > 0 && <PouroverSteps pours={pours} />}
 		</>
 	);
 };
